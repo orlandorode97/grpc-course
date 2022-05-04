@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package primes;
+
+option go_package = "github.com/orlandorode97/grpc-golang-course/primes/proto";
+
+message PrimeRequest {
+  int32 integer = 1;
+}
+
+message PrimeRespose {
+  int32 result = 1;
+}
+
+service PrimeService {
+  rpc DescomposeNumber(PrimeRequest) returns (stream PrimeRespose);
+}

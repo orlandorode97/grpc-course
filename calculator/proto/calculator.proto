@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package calculator;
+
+option go_package = "github.com/orlandorode97/grpc-golang-course/calculator/proto";
+
+import "sum.proto";
+import "average.proto";
+import "max.proto";
+
+service CalculatorService {
+  rpc Sum(SumRequest) returns (SumResponse);
+  rpc Average(stream AverageRequest) returns (AverageResponse);
+  rpc Max(stream MaxRequest) returns (stream MaxResponse);
+}
+
