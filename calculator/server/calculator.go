@@ -4,12 +4,15 @@ import (
 	"context"
 	"io"
 	"log"
+	"math"
 
 	calculatorpb "github.com/orlandorode97/grpc-golang-course/calculator/proto"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 )
 
 type Server struct {
-	calculatorpb.CalculatorServiceServer
+	calculatorpb.UnimplementedCalculatorServiceServer
 }
 
 func (s *Server) Sum(ctx context.Context, r *calculatorpb.SumRequest) (*calculatorpb.SumResponse, error) {
@@ -57,4 +60,14 @@ func (s *Server) Max(stream calculatorpb.CalculatorService_MaxServer) error {
 		}
 	}
 	return nil
+}
+
+func (s *Server) Sqrt(ctx context.Context, r *calculatorpb.SqrtRequest) (*calculatorpb.SqrtResponse, error) {
+	number := r.GetNumber()
+	if number < 0 {
+		return nil, status.Error(codes.InvalidArgument, "number cannot be less than zero")
+	}
+	return &calculatorpb.SqrtResponse{
+		Result: math.Sqrt(float64(number)),
+	}, nil
 }

@@ -1,0 +1,403 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Fri May 13 12:21:55 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/orlando.romo/go/src/grpc-golang-course
+# makefile (from `Makefile', line 19)
+SHELL := bash
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 20)
+SHELL_VERSION = $(shell echo $$BASH_VERSION)
+# environment
+STARSHIP_SESSION_KEY = 1019921919232346
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# makefile (from `Makefile', line 41)
+project := greet calculator blog primes
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/x5/g_x3h44177j76s4cp0wv2w8h0000gn/T/vscode-ipc-15b19fb4-77cb-4a93-b293-9cdea3bc64cd.sock
+# makefile (from `Makefile', line 30)
+PACKAGE = $(shell head -1 go.mod | awk '{print $$2}')
+# environment
+VSCODE_CWD = /
+# environment
+GOPROXY = https://proxy.golang.org,direct
+# environment
+PATH = /Users/orlando.romo/.rbenv/bin:/Users/orlando.romo/dh-tools/dh-dev-tools:/Users/orlando.romo/go/bin:/Users/orlando.romo/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/orlando.romo/.cargo/bin:/Users/orlando.romo/.fig/bin:/Users/orlando.romo/.local/bin:/usr/local/go/bin:/Users/orlando.romo/.gem/ruby/2.6.0/bin:/Users/orlando.romo/.fzf/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 1)
+BIN_DIR = bin
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+GOPATH = /Users/orlando.romo/go
+# makefile (from `Makefile', line 31)
+CHECK_DIR_CMD = test -d $@ || (echo "\033[31mDirectory $@ doesn't exist\033[0m" && false)
+# makefile (from `Makefile', line 32)
+HELP_CMD = grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 4)
+CLIENT_DIR = client
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o3OS9tY9OA/Listeners
+# automatic
+%F = $(notdir $%)
+# makefile (from `Makefile', line 35)
+SERVER_BIN = ${SERVER_DIR}
+# makefile (from `Makefile', line 2)
+PROTO_DIR = proto
+# environment
+TTY = not a tty
+# makefile (from `Makefile', line 22)
+VERSION_AND_ARCH = $(shell uname -rm)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+FIG_PID = 1294
+# environment
+PWD = /Users/orlando.romo/go/src/grpc-golang-course
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+GOMODCACHE = /Users/orlando.romo/go/pkg/mod
+# environment
+HOME = /Users/orlando.romo
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/orlando.romo/Library/Application Support/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+# environment
+LOGNAME = orlando.romo
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from `Makefile', line 34)
+RM_RF_CMD = ${RM_F_CMD} -r
+# environment
+ZSH = /Users/orlando.romo/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = orlando.romo
+# makefile (from `Makefile', line 39)
+.DEFAULT_GOAL := help
+# makefile (from `Makefile', line 21)
+UNAME := Darwin
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/x5/g_x3h44177j76s4cp0wv2w8h0000gn/T/
+# automatic
+*F = $(notdir $*)
+# makefile (from `Makefile', line 24)
+OS = macos ${VERSION_AND_ARCH}
+# environment
+VSCODE_IPC_HOOK = /Users/orlando.romo/Library/Application Support/Code/1.67.1-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.22188615.22188621
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# makefile (from `Makefile', line 3)
+SERVER_DIR = server
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# makefile (from `Makefile', line 36)
+CLIENT_BIN = ${CLIENT_DIR}
+# makefile (from `Makefile', line 33)
+RM_F_CMD = rm -f
+# environment
+LANG = C
+# environment
+VSCODE_PID = 1287
+# environment
+STARSHIP_SHELL = zsh
+# environment
+ENVAR_AWS_SECRET_KEY = ur++X656KsLzxkPOTSWR2bVDl+z5S3kYUC/0bLqB
+# variable set hash-table stats:
+# Load=90/1024=9%, Rehash=0, Collisions=8/144=6%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777223, inode 20415166): 14 files, no impossibilities.
+
+# 14 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+all: greet calculator blog primes
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/19=0%
+
+.PHONY: greet blog calculator primes help
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean_greet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 67):
+	${RM_F_CMD} greet/${PROTO_DIR}/*.pb.go
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-11 15:00:13
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+rebuild: clean all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test: all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 57):
+	go test ./...
+	
+
+calculator:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 51):
+	@${CHECK_DIR_CMD}
+	protoc -I$@/${PROTO_DIR} --go_opt=module=${PACKAGE} --go_out=. --go-grpc_opt=module=${PACKAGE} --go-grpc_out=. $@/${PROTO_DIR}/*.proto
+	go build -o ${BIN_DIR}/$@/${SERVER_BIN} ./$@/${SERVER_DIR}
+	go build -o ${BIN_DIR}/$@/${CLIENT_BIN} ./$@/${CLIENT_DIR}
+	
+
+help:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 86):
+	@${HELP_CMD}
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean: clean_greet clean_calculator clean_blog
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	${RM_F_CMD} ssl/*.crt
+	${RM_F_CMD} ssl/*.csr
+	${RM_F_CMD} ssl/*.key
+	${RM_F_CMD} ssl/*.pem
+	${RM_RF_CMD} ${BIN_DIR}
+	
+
+clean_calculator:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 70):
+	${RM_F_CMD} calculator/${PROTO_DIR}/*.pb.go
+	
+
+primes:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 51):
+	@${CHECK_DIR_CMD}
+	protoc -I$@/${PROTO_DIR} --go_opt=module=${PACKAGE} --go_out=. --go-grpc_opt=module=${PACKAGE} --go-grpc_out=. $@/${PROTO_DIR}/*.proto
+	go build -o ${BIN_DIR}/$@/${SERVER_BIN} ./$@/${SERVER_DIR}
+	go build -o ${BIN_DIR}/$@/${CLIENT_BIN} ./$@/${CLIENT_DIR}
+	
+
+about:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 78):
+	@echo "OS: ${OS}"
+	@echo "Shell: ${SHELL} ${SHELL_VERSION}"
+	@echo "Protoc version: $(shell protoc --version)"
+	@echo "Go version: $(shell go version)"
+	@echo "Go package: ${PACKAGE}"
+	@echo "Openssl version: $(shell openssl version)"
+	
+
+greet:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := greet
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/35=6%
+#  commands to execute (from `Makefile', line 51):
+	@${CHECK_DIR_CMD}
+	protoc -I$@/${PROTO_DIR} --go_opt=module=${PACKAGE} --go_out=. --go-grpc_opt=module=${PACKAGE} --go-grpc_out=. $@/${PROTO_DIR}/*.proto
+	go build -o ${BIN_DIR}/$@/${SERVER_BIN} ./$@/${SERVER_DIR}
+	go build -o ${BIN_DIR}/$@/${CLIENT_BIN} ./$@/${CLIENT_DIR}
+	
+
+clean_blog:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 73):
+	${RM_F_CMD} blog/${PROTO_DIR}/*.pb.go
+	
+
+blog:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 51):
+	@${CHECK_DIR_CMD}
+	protoc -I$@/${PROTO_DIR} --go_opt=module=${PACKAGE} --go_out=. --go-grpc_opt=module=${PACKAGE} --go-grpc_out=. $@/${PROTO_DIR}/*.proto
+	go build -o ${BIN_DIR}/$@/${SERVER_BIN} ./$@/${SERVER_DIR}
+	go build -o ${BIN_DIR}/$@/${CLIENT_BIN} ./$@/${CLIENT_DIR}
+	
+
+# files hash-table stats:
+# Load=17/1024=2%, Rehash=0, Collisions=0/50=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Fri May 13 12:21:55 2022
+
+ 

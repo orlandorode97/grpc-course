@@ -5,8 +5,11 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"time"
 
 	pb "github.com/orlandorode97/grpc-golang-course/greet/proto"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 )
 
 type Server struct {
@@ -74,4 +77,21 @@ func (s *Server) GreetEveryone(stream pb.GreetService_GreetEveryoneServer) error
 		}
 	}
 	return nil
+}
+
+
+// GRPC Unary type
+func (s *Server) GreetWithDeadline(ctx context.Context, r *pb.GreetRequest) (*pb.GreetResponse, error) {
+    for i:=0; i<3;i++ {
+        if ctx.Err() == context.DeadlineExceeded {
+            log.Println("user cancelled the request")
+            return nil, status.Error(codes.Canceled, "the client cancelled the requests")
+        }
+    }
+
+    time.Sleep(1 * time.Second)
+
+    return &pb.GreetResponse{
+        Result: "Hello" + r.FirstName,
+    }, nil
 }

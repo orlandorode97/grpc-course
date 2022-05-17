@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net"
 
@@ -21,7 +22,9 @@ func main() {
 	log.Printf("Listing on %s\n", addr)
 	s := grpc.NewServer()
 
-	primespb.RegisterPrimeServiceServer(s, &Server{})
+	primespb.RegisterPrimeServiceServer(s, &server{})
+
+	fmt.Println("Oke que la verga")
 
 	if err = s.Serve(listener); err != nil {
 		log.Fatalf("Failed to serve: %v\n", err)

@@ -25,6 +25,7 @@ func main() {
 	calculatorpb.RegisterCalculatorServiceServer(s, &Server{})
 
 	if err = s.Serve(lister); err != nil {
+
 		log.Fatalf("failed to serve %v", err)
 	}
 

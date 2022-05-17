@@ -18,6 +18,7 @@ func doGreet(c pb.GreetServiceClient) {
 	}
 
 	log.Printf("Greeting: %v\n", resp.Result)
+
 }
 
 func doGreetEveryone(c pb.GreetServiceClient) {
